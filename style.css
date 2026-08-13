@@ -2281,43 +2281,48 @@ header {
 }
 
 /* ========================= */
-/* LOGO */
+/* LOGO FOOTER */
 /* ========================= */
 
 .footer-logo {
     display: inline-flex;
     align-items: center;
-    gap: 13px;
+    gap: 15px;
 
     color: #ffffff;
-
     text-decoration: none;
 }
 
-.footer-logo-icon {
-    width: 72px;
-    height: 72px;
+/* NUEVO LOGO */
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footer-logo-image {
+    width: 80px;
+    height: 80px;
+
+    flex-shrink: 0;
 
     border-radius: 50%;
+    overflow: hidden;
 
-    background:
-        linear-gradient(
-            135deg,
-            #ff7a00,
-            #e34478,
-            #214e88
-        );
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
 
-    color: #ffffff;
+.footer-logo-image img {
+    width: 100%;
+    height: 100%;
 
-    font-size: 34px;
+    display: block;
 
-    box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.35);
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* TEXTO DEL LOGO */
+
+.footer-logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer-logo strong {
@@ -2327,6 +2332,8 @@ header {
     font-size: 25px;
     font-weight: 700;
     line-height: 1;
+
+    color: #ffffff;
 }
 
 .footer-logo span {
@@ -2341,6 +2348,8 @@ header {
     letter-spacing: 4px;
 }
 
+/* DESCRIPCIÓN */
+
 .footer-description {
     max-width: 280px;
     margin: 22px 0;
@@ -2350,7 +2359,6 @@ header {
     font-size: 14px;
     line-height: 1.65;
 }
-
 /* ========================= */
 /* SOCIAL MEDIA */
 /* ========================= */
