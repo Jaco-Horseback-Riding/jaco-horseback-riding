@@ -2710,3 +2710,9 @@ header {
     }
 
 }
+/* HACER EL NOMBRE MÁS PEQUEÑO EN CELULAR */
+@media (max-width: 800px) {
+    .logo {
+        font-size: 15px !important;
+    }
+}
